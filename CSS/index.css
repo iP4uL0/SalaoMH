@@ -292,3 +292,63 @@ button:not(#theme-toggle):not(.btn):hover {
         text-align: center;
     }
 }
+
+/* ==========================================
+   RESPONSIVIDADE (CELULARES E TABLETS)
+   ========================================== */
+@media (max-width: 768px) {
+    /* 1. Ajusta o Cabeçalho para empilhar os itens */
+    #cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    /* 2. Move o botão de Tema para o canto inferior para não sobrepor o cabeçalho no celular */
+    #theme-toggle {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 1.5rem;
+    }
+
+    /* 3. Reduz a altura do carrossel para não ocupar a tela inteira */
+    .carrossel {
+        height: 250px;
+        width: 95%;
+        margin: 30px 0;
+    }
+
+    /* 4. Diminui um pouco as setas do carrossel */
+    .btn {
+        padding: 5px 15px;
+        font-size: 1.2rem;
+    }
+
+    /* 5. Ajusta a largura e o texto da caixa de informações */
+    #info {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    #info p {
+        font-size: 0.95rem;
+    }
+
+    /* 6. Aumenta a largura dos botões de agendar para facilitar o clique com o dedo */
+    button:not(#theme-toggle):not(.btn) {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajuste extra para telas muito pequenas (ex: iPhone SE antigo) */
+@media (max-width: 400px) {
+    .carrossel {
+        height: 200px;
+    }
+}
