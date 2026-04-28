@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/index.css">
-    <title>Document</title>
+    <title>Magic Hair - Salão</title>
 </head>
 <body>
+    
     <header id="cabecalho">
-    <p>inicio</p>
-    <p>sobre nós</p>
-    <button id="botaocabecalho"><a href="https://w.app/magichair">Agende aqui!!!</a></button>
+        <p onclick="window.location.href='index.html'">Início</p>
+        <p onclick="window.location.href='Sobrenos.html'">Sobre Nós</p>
+        <button id="botaocabecalho"><a href="https://api.whatsapp.com/send?phone=5517991211840">Agende aqui!!!</a></button>
+        <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
     </header>
 
     <div class="carrossel">
-    <div class="slides">
-        <div class="slide"><img src="../IMG/lovepik-coloured-star-banners-background-image_400142473.jpg"></div>
-        <div class="slide"><img src="../IMG/WhatsApp Image 2025-12-11 at 14.09.46.jpeg"></div>
-        <div class="slide"><img src="../IMG/WhatsApp Image 2025-12-11 at 14.08.28.jpeg"></div>
-        <div class="slide"><img src="https://ravel.com.br/blog/wp-content/uploads/2023/07/banner-meio-blog-2.svg"></div>
-        <div class="slide"><img src="https://via.placeholder.com/800x300/444444/FFFFFF?text=Slide+3"></div>
-        <div class="slide"><img src="https://via.placeholder.com/800x300/444444/FFFFFF?text=Slide+3"></div>
+        <div class="slides">
+            <div class="slide"><img src="../IMG/Venha conhcer um pouco do nosso trabalho!!.png"></div>
+            <div class="slide"><img src="../IMG/212.png"></div>
+            <div class="slide"><img src="../IMG/34234.png"></div>
+        </div>
+
+        <button class="btn prev">‹</button>
+        <button class="btn next">›</button>
     </div>
 
-    <button class="btn prev">‹</button>
-    <button class="btn next">›</button>
-</div>
-<div id="info">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quasi atque sequi sed magni accusamus officiis rem eum provident? Quis beatae dolorem explicabo quia, voluptates amet enim tenetur consequatur cumque!</p>
-    
-</div>
-<button id="botaobaixo"><a href="https://w.app/magichair">Agende aqui!!!</a></button>
+    <div id="info">
+        <p>Bem-vindo ao Magic Hair. Descubra a sua melhor versão com os nossos especialistas em beleza. Um ambiente pensado no seu conforto e estilo, trazendo as tendências mais recentes para os seus fios.</p>
+    </div>
+
+    <button id="botaobaixo"><a href="https://api.whatsapp.com/send?phone=5517991211840">Agende seu Horário</a></button>
+
+    <footer id="rodape">
+        <p><strong>Magic Hair</strong></p>
+        <p>Rua Rubião Júnior, 1371A</p>
+        <p>© 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../JS/index.js"></script>
 </body>
-<script src="../JS/index.js"></script>
 </html>
